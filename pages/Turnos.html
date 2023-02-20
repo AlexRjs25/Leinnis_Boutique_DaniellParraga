@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leinnis Boutique</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="icon" href="../favicon.ico">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html"><img src="../assest/img/Logo.png" alt="Logo" width="90px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/Nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/Portfolio.html">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/Turnos.html">SUCURSALES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TURNOS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="container">
+                <div class="row">
+                    <h2 class="subtitulos palabraEspecial">Nails by Lei</h2>
+                    <h1 class="titulos text-center">¡Reserva tu Turno!</h1>
+                </div>
+            </section>
+            <section class="container">
+                <form class="row">
+                    <div class="col-lg-6 col-md-6 col-md-12 mt-3 mb-3">
+                        <label for="nameInput" class="form-label">Nombres</label>
+                        <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp"requerid>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-md-12 mt-3 mb-3">
+                        <label for="apInput" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="apInput" aria-describedby="emailHelp" requerid>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-md-12 mt-3 mb-3">
+                        <label for="dniImput" class="form-label">Documento de Identiddad</label>
+                        <input type="number" class="form-control" id="dniImput" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">Minimo 8 digitos.</div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-md-12 mt-3 mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-md-12 rounded mx-auto d-block">
+                        <label for="FTur">Dia del Turno</label>
+                        <input id="FTac" name="Fecha_Tur" type="date" class="form-control" required>
+                        <input id="HTac" name="Hora_Tur" type="time" class="form-control" required>
+                    </div>
+                    <section class="row">
+                        <div class="col-lg-6 col-md-6 col-md-12  mt-3 mb-3">
+                            <label for="servicioDataList" class="form-label">Sevicio a realizar</label>
+                            <input class="form-control" list="datalistOptions" id="servicioDataList" placeholder="Escribe para buscar...">
+                            <datalist id="datalistOptions">
+                                <option value="Manicura Comun">
+                                <option value="Manicura Semipermanente">
+                                <option value="Cambio de Esmalte Semi">
+                                <option value="Kapping Acrilico Semi">
+                                <option value="Nail Art Semi">
+                                <option value="Belleza de Pies Semi">
+                                <option value="Pedicura Semipermanente">
+                                <option value="Parches">
+                                </datalist>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-md-12  mt-3 mb-3">
+                            <label for="servicioSucursal" class="form-label">Elige una Surcursal</label>
+                            <input class="form-control" list="datalistOptions" id="servicioSucursal" placeholder="Escribe para buscar...">
+                            <datalist id="datalistOptions">
+                                <option value="Belgrano">
+                                <option value="Villa Del Parque">
+                            </datalist>
+                        </div>
+                    </section>
+                    <div class="m-2 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Acepto los terminos y condiciones</label>
+                    </div>
+                    <div class="row">
+                        <button type="submit" class="col-lg-1 col-md-1 col-md-1 m-2 btn btn-outline-danger ">Cancelar</button>
+                        <button type="submit" class="col-lg-1 col-md-1 col-md-1 m-2 btn btn-outline-warning">Limpiar</button>
+                        <button type="submit" class="col-lg-3 col-md-3 col-md-1 m-2 btn btn-outline-success">Solicitar Turno</button>
+                    </div>
+                </form>
+            </section>  
+            <aside class="container">
+                <h2>esta es la publicidad</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-md-12">
+                        <iframe width="500" height="315" src="https://www.youtube.com/embed/dOdhasPnYCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-md-12">
+                        <iframe width="500" height="315" src="https://www.youtube.com/embed/YrRQIH4wWrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            <br>
+            <div class="cajaTurnos">
+                <a href="../pages/Turnos.html"><img src="../assest/img/IcoTurnos.png" alt="IcoTurnos" class="cajaTurnos"></a>
+            </div>
+        </main>
+        <footer class="footer">
+            <h2 class="subtitulos mb-2">Leinnis Boutique</h2> 
+            <div class="redes-container">
+                <ul>
+                    <li><a href="https://www.instagram.com/leis_ps/?hl=es-la" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://wa.me/qr/6VENJAHLTVTQH1" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://es-la.facebook.com/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=es" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/?hl=es&gl=AR" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <p>Copyright © 2023. Todos los derechos reservados.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
