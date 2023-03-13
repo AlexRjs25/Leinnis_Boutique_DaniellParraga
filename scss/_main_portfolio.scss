@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;900&display=swap');
+
+/*PORTFOLIO*/
+.subtitulos{ 
+    margin: 0 0 0 10px;
+    font-size: map-get($fuentes, subtitulos);
+    font-weight: map-get($fuentes, oscura);
+}
+#galeria{
+    .col-lg-4{
+        margin: $margen-ninguno !important;
+        padding: $padding-nosotros;
+    }
+    img{
+        width: $width-estandar;
+        height: 250px;
+        border-radius: 10px;
+        object-fit: $objeto-cover;
+    }
+}

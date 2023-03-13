@@ -1,0 +1,43 @@
+/*Variables*/ 
+
+/*Colores*/
+
+$color-principal: rgb(255, 232, 223);
+$color-linksNav: #000000;
+$color-footer: rgb(136, 136, 136);
+$color-redes1: #333;
+$color-redes2: #fff;
+
+/*Mapa*/
+
+/*Fuentes*/
+
+$fuentes:(
+    chica: 16px,
+    titulos: 30px,
+    subtitulos: 25px,
+    importante: 26px,
+    footer: 18px,
+    oscura: 600,
+);
+
+/*margen y relleno*/
+$margen-ninguno: 0;
+$margen-especial: 10px;
+$padding-ninguno: 0;
+$padding-nosotros: 25px;
+$bordes-nosotros: 100px;
+
+/*tamaño y flexibilidad*/
+$width-estandar: 100%;
+$height-estandar: 100%;
+$height-grande: 400px;
+
+$display-inlineBlock: inline-block;
+$display-flexible: flex;
+
+$contenido-centrado: center;
+
+$objeto-cover: cover;
+
+
