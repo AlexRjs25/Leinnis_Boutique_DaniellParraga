@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;900&display=swap');
+
+////*footer*//////
+.footer{     
+    background-color: $color-footer;
+    text-align: $contenido-centrado;
+}
+.redes-container{
+    display: $display-flexible;
+    align-items: $contenido-centrado;
+    justify-content: $contenido-centrado;
+        ul{
+            &:hover a{
+                filter: blur(2px);}
+        }
+        li{
+            display: $display-inlineBlock;
+            margin: 0 5px;
+            width: 50px;
+            height: 50px;
+            text-align: $contenido-centrado;
+                a{
+                    display: block;
+                    padding: 0 10px;
+                    background-color: $color-redes1;
+                    color: $color-redes2;
+                    line-height: 50px;
+                    font-size: map-get($fuentes, footer);
+                    transition: .2s;
+                        &:hover{
+                            transform: translate(-3px) scale(q.05);
+                            filter: none;}
+                }
+            
+        }
+}
+:root{  /*Mapa quizas?????????*/ 
+    --instagram: #e4405f;
+    --whatsapp: #00bb2b;
+    --facebook: #3b5999;
+    --twitter: #55acee;
+    --youtube: #c4302b;
+}
+.redes-container ul li .instagram:hover{
+    background-color: var(--instagram);
+}
+.redes-container ul li .whatsapp:hover{
+    background-color: var(--whatsapp);
+}
+.redes-container ul li .facebook:hover{
+    background-color: var(--facebook);
+}
+.redes-container ul li .twitter:hover{
+    background-color: var(--twitter);
+}
+.redes-container ul li .youtube:hover{
+    background-color: var(--youtube);
+}
