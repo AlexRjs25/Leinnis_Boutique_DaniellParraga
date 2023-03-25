@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;900&display=swap');
+@import "mixins";
+@import "media-queries";
+
+@keyframes turnos{
+    0%{
+        transform: scale(1,0);
+    }
+    10%{
+        transform: scale(1.1);
+    }
+    20%{
+        background-color: #9ED5C5;
+        transform: scale(1.2);
+    }
+    30%{
+        transform: scale(1.3);
+    }
+}
+///*Main INDEX*///
+.container{
+    .row{
+        .subtitulos{ 
+            margin: 0 0 0 10px;
+            font-size: map-get($fuentes, subtitulos);
+            font-weight: map-get($fuentes, oscura);
+        }
+        .palabraEspecial{
+            margin: $margen-especial;
+            font-style: italic;
+            font-weight: map-get($fuentes, oscura);
+        }
+    }
+}
+.titulos{
+    @extend .subtitulos;
+    font-size: map-get($fuentes, titulos);
+}
+#principal{
+    .eslogan{
+        margin: $margen-especial;
+        height: $width-estandar;
+        align-items: $contenido-centrado;
+        display: $display-flexible;
+        font-size: map-get($fuentes, importante);
+        justify-content: $contenido-centrado;
+        text-align: $contenido-centrado;
+    }
+    img{
+        width: $width-estandar;
+        height: $height-grande;
+        border-top-left-radius: $bordes-nosotros;
+        border-bottom-left-radius: $bordes-nosotros;
+        object-fit: $objeto-cover;
+            @include tablet{
+                height: 500px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+    }
+}
+#clientes{
+    .col-lg-4{
+        margin: $margen-ninguno !important;
+        padding: $padding-nosotros;
+    }
+    img{
+        width: $width-estandar;
+        height: 300px;
+        border-radius: 10px;
+        object-fit: $objeto-cover;
+    }
+    .comentario{
+        margin-top: 15px;
+        text-align: $contenido-centrado;
+        font-style: italic;
+        font-weight: map-get($fuentes, oscura);
+    }
+}
+.cajaTurnos{
+    width: 45px;
+    height: 45px;
+    background-color: $color-principal;
+    padding: 5px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    animation-name: turnos;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+

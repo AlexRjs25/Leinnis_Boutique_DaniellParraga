@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;900&display=swap');
+
+/*Encabeado (header)*/
+.navbar{  
+    background-color: $color-principal !important; 
+    font-family: raleway;
+    font-weight: map-get($fuentes, oscura);
+        .LinkNav{   
+            text-decoration: none;
+            color: $color-linksNav;
+                .listasNav{  
+                    list-style: none;
+                    margin: $margen-ninguno;
+                    padding: $padding-ninguno;
+                    display: inline;
+                    padding: 5px;
+                    font-size: map-get($fuentes, chica);
+                    font-weight: map-get($fuentes, oscura);
+                    text-align: right;
+            }
+    }
+}
+
+
